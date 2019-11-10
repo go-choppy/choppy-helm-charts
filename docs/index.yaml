@@ -3,9 +3,9 @@ entries:
   fission-all:
   - apiVersion: v1
     appVersion: 1.6.0
-    created: "2019-11-10T09:12:46.361474+08:00"
+    created: "2019-11-10T09:16:52.720605+08:00"
     description: Fission is a fast serverless framework for Kubernetes.
-    digest: 7e05fdcf30dd765b1bec6a4871bbe0a7db4c6efcf7138e042f169b3e1fa43a07
+    digest: 97e7407c885fdabc6d479d74587de2b5b92be8dff40375b431c12d39c65278d7
     engine: gotpl
     home: http://fission.io/
     keywords:
@@ -18,13 +18,13 @@ entries:
       name: Ta Ching Chen
     name: fission-all
     urls:
-    - https://choppy-helm-charts.github.io/fission.tgz
+    - https://go-choppy.github.io/choppy-helm-charts/fission.tgz
     version: 1.6.0
   jupyterhub:
   - appVersion: 0.9.6
-    created: "2019-11-10T09:12:46.364331+08:00"
+    created: "2019-11-10T09:16:52.723196+08:00"
     description: Multi-user Jupyter installation
-    digest: bf072a47fb155721bf7ab8ebf0b98245a439d1dc163a8efa06be242f60f2fc13
+    digest: 9a7f71d01c539bf0d900beedcaf74f08f5e6815bba40e301893066b2750e1cd3
     home: https://z2jh.jupyter.org
     icon: https://jupyter.org/assets/hublogo.svg
     kubeVersion: '>=1.11.0-0'
@@ -33,6 +33,6 @@ entries:
     - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
     tillerVersion: '>=2.11.0-0'
     urls:
-    - https://choppy-helm-charts.github.io/jupyterhub.tgz
+    - https://go-choppy.github.io/choppy-helm-charts/jupyterhub.tgz
     version: 0.8.2
-generated: "2019-11-10T09:12:46.358942+08:00"
+generated: "2019-11-10T09:16:52.716246+08:00"
