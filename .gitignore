@@ -1,2 +1,4 @@
-configs
+configs/*/config.yaml
+configs/*/secret.yaml
+!configs/*-example.yaml
 .DS_Store
