@@ -3,9 +3,9 @@ entries:
   fission-all:
   - apiVersion: v1
     appVersion: 1.6.0
-    created: "2019-11-10T09:16:52.720605+08:00"
+    created: "2019-11-16T14:49:51.881487+08:00"
     description: Fission is a fast serverless framework for Kubernetes.
-    digest: 97e7407c885fdabc6d479d74587de2b5b92be8dff40375b431c12d39c65278d7
+    digest: a6be5d937dbb5c89f9a96905575f07241072a77fe6acc557b43d57d4a9545d90
     engine: gotpl
     home: http://fission.io/
     keywords:
@@ -22,9 +22,9 @@ entries:
     version: 1.6.0
   jupyterhub:
   - appVersion: 0.9.6
-    created: "2019-11-10T09:16:52.723196+08:00"
+    created: "2019-11-16T14:49:51.883865+08:00"
     description: Multi-user Jupyter installation
-    digest: 9a7f71d01c539bf0d900beedcaf74f08f5e6815bba40e301893066b2750e1cd3
+    digest: c92a16b892f7925f9feb7f359cf3c5afe6c2e4a242d37977c58ee5ec23e20e1d
     home: https://z2jh.jupyter.org
     icon: https://jupyter.org/assets/hublogo.svg
     kubeVersion: '>=1.11.0-0'
@@ -35,4 +35,25 @@ entries:
     urls:
     - https://go-choppy.github.io/choppy-helm-charts/jupyterhub.tgz
     version: 0.8.2
-generated: "2019-11-10T09:16:52.716246+08:00"
+  openldap:
+  - apiVersion: v1
+    appVersion: 2.4.48
+    created: "2019-11-16T14:49:51.884388+08:00"
+    description: Community developed LDAP software
+    digest: a950035d7337e431201f51337cd7d4064d0d621fd9f7abc26992a5e1a1d4ad78
+    engine: gotpl
+    home: https://www.openldap.org
+    icon: http://www.openldap.org/images/headers/LDAPworm.gif
+    keywords:
+    - ldap
+    - openldap
+    maintainers:
+    - email: enis@apache.org
+      name: enis
+    name: openldap
+    sources:
+    - https://github.com/kubernetes/charts
+    urls:
+    - https://go-choppy.github.io/choppy-helm-charts/openldap.tgz
+    version: 1.2.2
+generated: "2019-11-16T14:49:51.877837+08:00"
