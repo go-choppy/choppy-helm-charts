@@ -2,3 +2,5 @@ configs/*/config.yaml
 configs/*/secret.yaml
 !configs/*-example.yaml
 .DS_Store
+configs/kong/proxy-config/*
+!configs/kong/proxy-config/*-example.yaml

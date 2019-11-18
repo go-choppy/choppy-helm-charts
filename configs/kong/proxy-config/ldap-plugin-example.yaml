@@ -1,0 +1,15 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: ldap-auth
+config: 
+  hide_credentials: true
+  ldap_host: ldap.3steps.cn
+  ldap_port: 389
+  start_tls: false
+  base_dn: ou=users,dc=3steps,dc=cn
+  verify_ldap_host: false
+  attribute: cn
+  cache_ttl: 60
+  header_type: basic
+plugin: ldap-auth
