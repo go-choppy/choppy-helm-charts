@@ -1,0 +1,15 @@
+#
+# A ConfigMap spec for metabase slapd that map directly to env variables in the Pod.
+# Note that passwords are defined as secrets
+#
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "metabase.fullname" . }}-env
+  labels:
+{{ include "metabase.labels" . | indent 4 }}
+{{- if .Values.extraLabels }}
+{{ toYaml .Values.extraLabels | indent 4 }}
+{{- end }}
+data:
+{{ toYaml .Values.env | indent 2 }}

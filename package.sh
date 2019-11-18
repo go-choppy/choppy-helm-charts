@@ -1,10 +1,14 @@
 #!/bin/bash
 
-cd charts
-for dir in `ls -d */`;
+dirs=("charts" "incubator")
+
+for dir in ${dirs[@]};
 do
-  printf "   $dir into docs\n";
-  dirname=`echo "$dir" | sed "s/\///g"`;
-  helm package $dirname
-  mv -f ${dirname}*.tgz ../docs
+  cd "$dir"
+  for subdir in `ls -d */`;
+  do
+    dirname=`echo "$subdir" | sed "s/\///g"`;
+    helm package $dirname -d ../docs
+  done
+  cd ../
 done

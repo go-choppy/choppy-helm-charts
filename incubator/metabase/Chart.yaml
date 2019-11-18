@@ -1,0 +1,14 @@
+apiVersion: v1
+appVersion: "1.0"
+description: Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.
+icon: http://metabase.3steps.cn/app/assets/img/favicon-32x32.png
+home: http://metabase.3steps.cn
+keywords:
+- metabase
+maintainers:
+- email: yjcyxky@163.com
+  name: Jingcheng Yang
+- email: pgx@fudan.edu.cn
+  name: Choppy Team
+name: metabase
+version: 0.1.0

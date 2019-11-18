@@ -1,6 +1,6 @@
-.PHONY: package generate-index clean-charts
+.PHONY: package generate-index
 
-generate-index: clean-charts package
+generate-index: package
 	@echo ""
 	@echo "Generate helm chart index..."
 	@cd docs && helm repo index ./ --url https://go-choppy.github.io/choppy-helm-charts/
@@ -10,7 +10,3 @@ package:
 	@bash package.sh
 
 install-kong:
-
-clean-charts:
-	@echo "Clean docs directory"
-	rm -rf ./docs/*
