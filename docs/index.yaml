@@ -3,9 +3,9 @@ entries:
   fission-all:
   - apiVersion: v1
     appVersion: 1.6.0
-    created: "2019-11-16T14:49:51.881487+08:00"
+    created: "2019-11-18T14:42:13.82051+08:00"
     description: Fission is a fast serverless framework for Kubernetes.
-    digest: a6be5d937dbb5c89f9a96905575f07241072a77fe6acc557b43d57d4a9545d90
+    digest: a302722d29cb0ab6cb973759a97ce49606e05fe2b03576eba4d18b89f9f72a28
     engine: gotpl
     home: http://fission.io/
     keywords:
@@ -18,13 +18,13 @@ entries:
       name: Ta Ching Chen
     name: fission-all
     urls:
-    - https://go-choppy.github.io/choppy-helm-charts/fission.tgz
+    - https://go-choppy.github.io/choppy-helm-charts/fission-all-1.6.0.tgz
     version: 1.6.0
   jupyterhub:
   - appVersion: 0.9.6
-    created: "2019-11-16T14:49:51.883865+08:00"
+    created: "2019-11-18T14:42:13.8238+08:00"
     description: Multi-user Jupyter installation
-    digest: c92a16b892f7925f9feb7f359cf3c5afe6c2e4a242d37977c58ee5ec23e20e1d
+    digest: 48140de8a8be8b9d9cac34c9655701369ed66f460b64510b83469704d45b81c1
     home: https://z2jh.jupyter.org
     icon: https://jupyter.org/assets/hublogo.svg
     kubeVersion: '>=1.11.0-0'
@@ -33,14 +33,24 @@ entries:
     - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
     tillerVersion: '>=2.11.0-0'
     urls:
-    - https://go-choppy.github.io/choppy-helm-charts/jupyterhub.tgz
+    - https://go-choppy.github.io/choppy-helm-charts/jupyterhub-0.8.2.tgz
     version: 0.8.2
+  k8s-ldap-passwd:
+  - apiVersion: v1
+    appVersion: "1.3"
+    created: "2019-11-18T14:42:13.824152+08:00"
+    description: LTB Project Password self service
+    digest: 3faebab9c369ecaae52845c23d0980f617f918f3ff8e1ee014e06d8dca8fabef
+    name: k8s-ldap-passwd
+    urls:
+    - https://go-choppy.github.io/choppy-helm-charts/k8s-ldap-passwd-0.1.0.tgz
+    version: 0.1.0
   openldap:
   - apiVersion: v1
     appVersion: 2.4.48
-    created: "2019-11-16T14:49:51.884388+08:00"
+    created: "2019-11-18T14:42:13.82476+08:00"
     description: Community developed LDAP software
-    digest: a950035d7337e431201f51337cd7d4064d0d621fd9f7abc26992a5e1a1d4ad78
+    digest: bd73edfe31bc1478d863c27b64bad5875ef2bf814f1495f35a0b970105f74595
     engine: gotpl
     home: https://www.openldap.org
     icon: http://www.openldap.org/images/headers/LDAPworm.gif
@@ -54,6 +64,6 @@ entries:
     sources:
     - https://github.com/kubernetes/charts
     urls:
-    - https://go-choppy.github.io/choppy-helm-charts/openldap.tgz
+    - https://go-choppy.github.io/choppy-helm-charts/openldap-1.2.2.tgz
     version: 1.2.2
-generated: "2019-11-16T14:49:51.877837+08:00"
+generated: "2019-11-18T14:42:13.817569+08:00"

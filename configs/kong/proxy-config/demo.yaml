@@ -1,0 +1,55 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: demo
+  annotations: 
+    plugins.konghq.com: basic-auth
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /foo
+        backend:
+          serviceName: httpbin
+          servicePort: 80
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: demo-2
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /baz
+        backend:
+          serviceName: httpbin
+          servicePort: 80
+
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: basic-auth
+config:
+  hide_credentials: true
+plugin: basic-auth
+
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongConsumer
+metadata:
+  name: harry
+username: harry
+
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongCredential
+metadata:
+  name: harry-basic-auth
+consumerRef: harry
+type: basic-auth
+config:
+  username: harry
+  password: test
