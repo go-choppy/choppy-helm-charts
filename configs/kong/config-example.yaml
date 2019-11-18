@@ -1,0 +1,12 @@
+admin:
+  useTLS: false
+  type: ClusterIP
+  ingress:
+    enabled: false
+
+proxy:
+  tls:
+    enabled: false
+  type: LoadBalancer
+  ingress:
+    enabled: false
