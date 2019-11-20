@@ -1,0 +1,14 @@
+apiVersion: v1
+appVersion: "1.0"
+description: The Choppy Data Portal for Cancer Genomics provides visualization, analysis and download of large-scale cancer genomics data sets.
+icon: http://data.3steps.cn/cdataportal/reactapp/images/369b022222badf37b2b0c284f4ae2284.png
+home: http://data.3steps.cn
+keywords:
+- choppy-data-portal
+maintainers:
+- email: yjcyxky@163.com
+  name: Jingcheng Yang
+- email: pgx@fudan.edu.cn
+  name: Choppy Team
+name: choppy-data-portal
+version: 0.1.0

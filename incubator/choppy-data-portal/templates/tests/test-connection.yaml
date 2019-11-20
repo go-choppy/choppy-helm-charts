@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "choppy-data-portal.fullname" . }}-test-connection"
+  labels:
+{{ include "choppy-data-portal.labels" . | indent 4 }}
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args:  ['{{ include "choppy-data-portal.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
