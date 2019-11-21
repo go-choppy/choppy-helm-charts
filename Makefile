@@ -8,5 +8,3 @@ generate-index: package
 package:
 	@echo "Package all helm charts..."
 	@bash package.sh
-
-install-kong:

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dirs=("charts" "incubator")
+dirs=("charts" "incubator" "webapps")
 
 for dir in ${dirs[@]};
 do
