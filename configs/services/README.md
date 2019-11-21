@@ -31,5 +31,7 @@ sync:
 ```
 
 3. 无法显示README.md
+
 ![Not Found README](http://nordata-cdn.oss-cn-shanghai.aliyuncs.com/choppy/helm-charts-not-found-readme.png)
+
 相应Chart压缩包中缺少`README.md`文件
