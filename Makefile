@@ -8,3 +8,6 @@ generate-index: package
 package:
 	@echo "Package all helm charts..."
 	@bash package.sh
+
+update-helm:
+	helm repo update

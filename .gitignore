@@ -1,6 +1,6 @@
-configs/*/config.yaml
-configs/*/secret.yaml
+configs/**/config.yaml
+configs/**/secret.yaml
 !configs/*-example.yaml
 .DS_Store
-kong-ingress/ingress
-kong-ingress/plugin
+*/kong-ingress/ingress
+*/kong-ingress/plugin
