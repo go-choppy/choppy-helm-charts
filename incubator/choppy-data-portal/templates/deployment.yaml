@@ -30,6 +30,10 @@ spec:
             subPath: ROOT
             readOnly: true
           - name: choppy-data-portal-storage
+            mountPath: /usr/local/tomcat/conf/web.xml
+            subPath: web.xml
+            readOnly: true
+          - name: choppy-data-portal-storage
             mountPath: /cbioportal/portal.properties
             subPath: portal.properties
             readOnly: true
